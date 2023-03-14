@@ -56,7 +56,7 @@ with st.spinner('Loading'):
         "Select Parish", options=parish_list, default=parish_list[0:5])
 
     if (year == []) | (parish == []):
-        st.error("Please select atleast on value for Parish or Year")
+        st.error("Please select at least one value for Parish or Year")
     else:
         dff1 = df_pred.query('(parish ==@parish) & (year ==@year)')
 
