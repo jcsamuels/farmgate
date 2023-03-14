@@ -60,10 +60,7 @@ with right_column:
     st_lottie(lottie_coding, height=400, key="crops")
 
 
-with st.container():
-    st.write("##")
-    st.write("##")
-    st.write("##")
+with st.container():    
     st.write("##")
     st.write("##")
     st.write("##")
