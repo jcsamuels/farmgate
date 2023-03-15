@@ -93,6 +93,7 @@ with st.spinner('Loading'):
             st.empty()
 
         with row2:
+            st.markdown("###### Predicted Average Crop Price in JMD per per month")
             st.dataframe(dff_pivot)
             st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
