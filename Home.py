@@ -51,9 +51,9 @@ with left_column:
     st.write("**👈 Select a Report from the sidebar menu options and choose the appropriate filters below")
     st.markdown("""
                 ### Please see details of each dash board listed below?
-                - Article: Contains Analysis of existing data as provided by Jamis;
+                - Article: Describes Basic Streamlit deployment and data collection and display for JAMIS farmgate data;
                 - Dashboard: Interactive dashboard that allows users to manipulate and visualize datasets
-                - Forecast Report: Contains Prediction prices for crops across various parishes within jamaica.
+                - Prediction Report: Contains Prediction prices for crops across various parishes within jamaica.
                 """
                 )
 with right_column:
