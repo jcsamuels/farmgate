@@ -46,8 +46,8 @@ st.sidebar.success("Select a Report Above.")
 left_column, right_column = st.columns(2)
 with left_column:
     st.write(
-        "This dashboard showcases reports in relation to Farmgate data available on Jamis Website")
-    st.write("A prediction report was added to forecast Crop Prices across Jamaica for the following year")
+        "This dashboard showcases reports in relation to Farmgate data available on Jamis Website [link](https://www.ja-mis.com/companionsite/reportsarchive.aspx)")
+    st.write("A prediction report was added to forecast Crop Prices across Jamaica for the next three years (2023 - 2025)")
     st.write("**👈 Select a Report from the sidebar menu options and choose the appropriate filters below")
     st.markdown("""
                 ### Please see details of each dash board listed below?
