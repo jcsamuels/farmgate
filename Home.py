@@ -53,7 +53,8 @@ with left_column:
                 ### Please see details of each dash board listed below?
                 - Article: Describes Basic Streamlit deployment and data collection and display for JAMIS farmgate data;
                 - Dashboard: Interactive dashboard that allows users to manipulate and visualize datasets
-                - Prediction Report: Contains Prediction prices for crops across various parishes within jamaica.
+                - Prediction Report: Contains Prediction prices for crops for each month with the ability to 
+                  filter results based on year and parish.
                 """
                 )
 with right_column:
