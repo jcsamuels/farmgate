@@ -46,13 +46,13 @@ st.sidebar.success("Select a Report Above.")
 left_column, right_column = st.columns(2)
 with left_column:
     st.write(
-        "This dashboard showcases reports in relation to Farmgate data available on Jamis Website [link](https://www.ja-mis.com/companionsite/reportsarchive.aspx)")
-    st.write("A prediction report was added to forecast Crop Prices across Jamaica for the next three years (2023 - 2025)")
+        "This dashboard showcases reports in relation to Farmgate data available on Jamis Website [Web link](https://www.ja-mis.com/companionsite/reportsarchive.aspx)")
+    st.write("A prediction report was added to forecast crop prices across Jamaica for the three years (2023 - 2025) as the last data extraction goes up to December 2022")
     st.write("**👈 Select a Report from the sidebar menu options and choose the appropriate filters below")
     st.markdown("""
                 ### Please see details of each dash board listed below?
-                - Article: Describes Basic Streamlit deployment and data collection and display for JAMIS farmgate data;
-                - Dashboard: Interactive dashboard that allows users to manipulate and visualize datasets
+                - Article: Describes Basic Streamlit deployment, data collection and visulaization for JAMIS farmgate data.
+                - Dashboard: Interactive dashboard that allows users to manipulate and visualize datasets and reports.
                 - Prediction Report: Contains Prediction prices for crops for each month with the ability to 
                   filter results based on year and parish.
                 """
