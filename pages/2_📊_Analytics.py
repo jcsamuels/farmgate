@@ -428,7 +428,7 @@ with st.container():
 # ---- CONTACT ----
 with st.container():
     st.write("---")
-    st.header("Contact Me!")
+    st.header("Contact Form")
     st.write("##")
 
     # Documentation: https://formsubmit.co/ !!!
