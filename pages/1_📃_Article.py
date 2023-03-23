@@ -184,22 +184,23 @@ with row2:
                 ### Data Modelling
 
                 To predict the price of different products over time the variable to consider and to build a prediction model
-                against is the most frequent price variable. This attribute contains contiguous values and therefore a regression
+                against is the most frequent price variable, therefore the low and high price attributes were ommitted from data modelling. 
+                The most frequent price attribute contains contiguous values and therefore a regression
                 model is the most suitable approach to determine the relationship between all attribute columns from the dataset
                 against the most frequent price column which is the target variable.
                 The modeling process was measured against 5 different regression models where the model with least mean square error
-                or mean percentage error and the highest r2 score was selected. The r2 score is a measure of how well the proportion
+                or mean percentage error and the highest r squared score was selected. The r squared score is a measure of how well the proportion
                 of variance of the product prices is explained by all the other columns / attributes within the dataset. The model
                 selected was built from Random Forest Regressor which subsequently can be used to predict future product prices, and can be
-                modified or rebuilt to incorporate data from other JAMIS agricultural product prices.
+                modified or rebuilt to incorporate data from other JAMIS agricultural product prices for future initiatives.
 
                 ### Random Regressor Performance:
 
-                - Mean Absolute Percentage Error (MAPE) value given in percentage: 13.81%
-                - Mean absolute error: 24.33
-                - Mean squared error: 47.45
-                - r-squared score: 86.82 %
-                - Model performance: 86.82% accuracy
+                - Mean Absolute Percentage Error (MAPE) value given in percentage: 13.43%
+                - Mean absolute error: 24.68
+                - Mean squared error: 45.85
+                - r-squared score: 89.23 %
+                - Model performance: 89.23% accuracy
 
                 Note (Larger r2 scores implies greater dependency of product prices on the independent variables such as date, parish,
                 commodity, supply, type, supply, grade, etc) *
@@ -211,18 +212,18 @@ with row2:
                 Now that we have described the data and the prediction models performance, its time to review how we can display reports and visuals
                 in the form of a dashboard. The typical formart will include some snapshots that showcases the average crop price by category followed by bar charts, a 
                 Jamaica chloropleth graph and sunburst charts to represent hierarchical data. These visuals will show how averae crop prices are distributed by parish and the
-                respectives months where crop prices are the hisghes. Finally we can complete our visuals with A tabulated report where the first tab consists of line plots 
+                respectives months where crop prices are the highest. Finally we can complete our visuals with A tabulated report where the first tab consists of line plots 
                 and stacked bar graphs to assess a more detailed description of prices and trends by supply and grade, as well as scatter charts and pie charts 
-                on tab two two for assesing price distribution over time. Since streamlit is a python oriented tool, we have access to a plethora of data visualization libraries. 
+                on tab two for assesing price distribution over time. Since streamlit is a python oriented tool, we have access to a plethora of data visualization libraries. 
                 These libraries include altair charts, plotly, bokeh etc. For this project mainly the plotly library was used to build the visuals for the dashboard and 
                 the prediction results visuals. This dashboard will feature a limited amount of slicers and drop down options within the sidebar menu to allow users to interact with 
-                dataset as they see fit. 
+                datasets as they see fit. 
 
                     
                 ### Forecasting
                 The modeling procedure used for this project only accounts for data available on the JAMIS website and was not augmented by any additional sources. Therefore
-                this model is soley for illustraiton purposes and how streamlit is a great tool to facilitate deployment.  Users may use the drop down menu options
-                to review crop predicted prices by month or to review the general trend of crop category  prices over time.                    
+                this model is soley for illustraiton purposes and how streamlit is a great tool to facilitate deployment.  Users may use the drop down menu options which includes
+                the year and parish filters to review crop predicted prices by month or to the general trend of crop category prices over time.                    
 
                 """)
 
@@ -231,8 +232,8 @@ with row2:
         st.write("##")
         st.markdown("""
                 ### 
-                    Use to contact form below to reach out to me via email if have any questions, you can also check out my youtube post
-                    where I show how to deploy an azure pipeline using azure cloud services
+                    Use to contact form below to reach out to me via email if have you have any questions about streamlit, data modeling or data visualization. You can 
+                    also check out my youtube post where I show how to deploy an azure pipeline using azure cloud services.
                     """)
 
 
