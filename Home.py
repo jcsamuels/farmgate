@@ -46,14 +46,14 @@ st.sidebar.success("Select a Report Above.")
 left_column, right_column = st.columns(2)
 with left_column:
     st.write(
-        "This dashboard showcases reports in relation to Farmgate data available on Jamis Website [link](https://www.ja-mis.com/companionsite/reportsarchive.aspx)")
-    st.write("A prediction report was added to forecast Crop Prices across Jamaica for the next three years (2023 - 2025)")
+        "This dashboard showcases reports in relation to Farmgate data available on Jamis Website [Web link](https://www.ja-mis.com/companionsite/reportsarchive.aspx)")
+    st.write("A prediction report was added to forecast Crop Prices across Jamaica for the next three years (2023 - 2025) as the last data extracted was done December 2022")
     st.write("**👈 Select a Report from the sidebar menu options and choose the appropriate filters below")
     st.markdown("""
                 ### Please see details of each dash board listed below?
-                - Article: Describes Basic Streamlit deployment and data collection and display for JAMIS farmgate data;
-                - Dashboard: Interactive dashboard that allows users to manipulate and visualize datasets
-                - Prediction Report: Contains Prediction prices for crops for each month with the ability to 
+                - Article: Describes Basic Streamlit deployment, data collection and visualization for JAMIS farmgate data.
+                - Dashboard: Interactive dashboard that allows users to manipulate and visualize datasets.
+                - Prediction Report: Contains prediction prices for crops for each month with the ability to 
                   filter results based on year and parish.
                 """
                 )
@@ -75,7 +75,7 @@ with st.container():
         st.subheader("Tech Expert Hour")
         st.write(
             """This Tech Expert illustration shows how to establish data pipelines within the azure cloud platform. 
-               In this illustration I'll show you how to build data pipelines and more uwing azure data factory"""
+               In this illustration I'll show you how to build data pipelines and more using azure data factory"""
         )
         st.markdown(
             "[Watch Now...](https://www.youtube.com/watch?v=mWW-OsELCn0&t=1400s)")
@@ -83,7 +83,7 @@ with st.container():
 # ---- CONTACT ----
 with st.container():
     st.write("---")
-    st.header("Contact Me!")
+    st.header("Contact Form")
     st.write("##")
 
     # Documentation: https://formsubmit.co/ !!!
