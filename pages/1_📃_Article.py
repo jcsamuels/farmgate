@@ -122,7 +122,7 @@ with row2:
                 3. Wholesale Prices
                 4. Municipal Prices
 
-                The price point of interest that was analyzed was the Farmgate prices which as the website stipulates are agricultural prices collected on Wednesdays
+                The price point of interest that was extracted for this project was the Farmgate prices, which as the website stipulates are crop prices collected on Wednesdays
                 from farmers by the Marketing and Extension officers of the rural agricultural development authority (RADA). The prices are a representation of produce
                 cost per Kilogram for the following Saturday of when the data was collected.
                 """)
@@ -135,11 +135,11 @@ with row2:
                 ### Jamis Farmgate API
                 The JAMIS website consisted of 4 report types where only the farmgate data was extracted and analyzed to assess
                 farm prices of different agricultural products. FastAPI is an open source high performance web framework that
-                facilitated converting Jamis website data into an analytics opportunity that can potentially create avenues
-                for data monetization across the agricultural industry.
+                facilitated converting the Jamis website publicly available data into an analytics opportunity that can potentially create avenues
+                for data monetization across the agricultural industry if augmented with additional but relevant data sources.
                 In order to extract data from the JAMIS website an API was built using the FastAPI software framework. The API
                 allows downloading of individual pricing reports of produce between 2012 and 2022 as pdf files, after which the
-                data is extracted as stored as a database file.
+                data was extracted and stored as a database file that was suitable to facilitate data processing.
                 """)
         st.write("---")
 
@@ -152,7 +152,7 @@ with row2:
 
                 - Website: https://www.ja-mis.com/companionsite/home.aspx
                 - Price Point Dataset: Farmgate
-                - Date when prices were collected: Between Year 2012 and 2021
+                - Date when prices were collected: Between Year 2012 and 2022
                 - Products: 36 different agricultural products.
                 - Product Category: 5 types of products (Fruit, Root Crops, Vegetables, Herbs and Spices, Legumes)
                 """)
