@@ -30,7 +30,7 @@ st.write("---")
 
 @st.cache
 def get_data():
-    AZ_BUCKET_URL = "https://formula1fujpoc1.blob.core.windows.net/farmgate"
+    AZ_BUCKET_URL = "https://azjcsdls01.blob.core.windows.net/farmgate/"
     df_pred = pd.read_csv(AZ_BUCKET_URL + "/predictions.csv")
     df_pred["month1"] = pd.to_datetime(df_pred['price_date']).dt.month
     df_pred["month"] = pd.to_datetime(df_pred['price_date']).dt.strftime('%B')
